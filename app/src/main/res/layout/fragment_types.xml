@@ -149,8 +149,8 @@
                 android:id="@+id/btnFAQ13"
                 android:layout_width="160dp"
                 android:layout_height="160dp"
-                android:layout_marginTop="8dp"
 
+                android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
                 android:background="@drawable/button_style3"
                 android:text="Moneyline bets"
@@ -159,7 +159,7 @@
                 android:textStyle="bold|italic"
                 app:layout_constraintBottom_toBottomOf="@+id/btnFAQ11"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/btnFAQ11" />
+                app:layout_constraintTop_toTopOf="parent" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btnFAQ11"
