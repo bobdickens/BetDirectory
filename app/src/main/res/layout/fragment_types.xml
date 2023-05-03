@@ -1,9 +1,196 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TypesFragment">
+    tools:context=".TypesFragment"
+    android:background="@drawable/backgroundmenu"
+    android:padding="20dp">
 
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnFAQ17"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/button_style3"
+                android:text="Teasers"
+                android:textColor="@color/material_dynamic_neutral30"
+                android:textSize="25sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnFAQ15" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnFAQ15"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/button_style3"
+                android:text="Parlays"
+                android:textColor="@color/material_dynamic_neutral30"
+                android:textSize="25sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnFAQ13" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnFAQ16"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/button_style3"
+                android:text="Prop bets"
+                android:textColor="@color/material_dynamic_neutral30"
+                android:textSize="25sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnFAQ14" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnFAQ18"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/button_style3"
+                android:text="Reverse teasers (also called “pleasers”)"
+                android:textColor="@color/material_dynamic_neutral30"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnFAQ16" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnFAQ19"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/button_style3"
+                android:text="Round  robin bets"
+                android:textColor="@color/material_dynamic_neutral30"
+                android:textSize="25sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnFAQ17" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnFAQ20"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/button_style3"
+                android:text="Futures bets"
+                android:textColor="@color/material_dynamic_neutral30"
+                android:textSize="25sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnFAQ18" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnFAQ22"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/button_style3"
+                android:text="If bets"
+                android:textColor="@color/material_dynamic_neutral30"
+                android:textSize="25sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnFAQ20" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnFAQ21"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/button_style3"
+                android:text="Head-to-head bets"
+                android:textColor="@color/material_dynamic_neutral30"
+                android:textSize="25sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnFAQ19" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnFAQ13"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_marginTop="8dp"
+
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/button_style3"
+                android:text="Moneyline bets"
+                android:textColor="@color/material_dynamic_neutral30"
+                android:textSize="25sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintBottom_toBottomOf="@+id/btnFAQ11"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/btnFAQ11" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnFAQ11"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/button_style3"
+
+                android:text="Spread  bets"
+                android:textColor="@color/material_dynamic_neutral30"
+                android:textSize="25sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnFAQ14"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_marginStart="8dp"
+
+                android:layout_marginTop="8dp"
+                android:background="@drawable/button_style3"
+                android:text="Total bets (Over/Under)"
+                android:textColor="@color/material_dynamic_neutral30"
+                android:textSize="25sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnFAQ11" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
