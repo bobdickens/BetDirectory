@@ -26,7 +26,7 @@
             android:padding="5dp">
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnFAQ17"
+                android:id="@+id/btn6"
                 android:layout_width="160dp"
                 android:layout_height="160dp"
 
@@ -38,10 +38,10 @@
                 android:textSize="25sp"
                 android:textStyle="bold|italic"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btnFAQ15" />
+                app:layout_constraintTop_toBottomOf="@+id/btn4" />
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnFAQ15"
+                android:id="@+id/btn4"
                 android:layout_width="160dp"
                 android:layout_height="160dp"
 
@@ -53,10 +53,10 @@
                 android:textSize="25sp"
                 android:textStyle="bold|italic"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btnFAQ13" />
+                app:layout_constraintTop_toBottomOf="@+id/btn2" />
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnFAQ16"
+                android:id="@+id/btn5"
                 android:layout_width="160dp"
                 android:layout_height="160dp"
 
@@ -68,10 +68,10 @@
                 android:textSize="25sp"
                 android:textStyle="bold|italic"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btnFAQ14" />
+                app:layout_constraintTop_toBottomOf="@+id/btn3" />
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnFAQ18"
+                android:id="@+id/btn7"
                 android:layout_width="160dp"
                 android:layout_height="160dp"
 
@@ -83,10 +83,10 @@
                 android:textSize="20sp"
                 android:textStyle="bold|italic"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btnFAQ16" />
+                app:layout_constraintTop_toBottomOf="@+id/btn5" />
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnFAQ19"
+                android:id="@+id/btn8"
                 android:layout_width="160dp"
                 android:layout_height="160dp"
 
@@ -98,10 +98,10 @@
                 android:textSize="25sp"
                 android:textStyle="bold|italic"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btnFAQ17" />
+                app:layout_constraintTop_toBottomOf="@+id/btn6" />
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnFAQ20"
+                android:id="@+id/btn9"
                 android:layout_width="160dp"
                 android:layout_height="160dp"
 
@@ -113,10 +113,10 @@
                 android:textSize="25sp"
                 android:textStyle="bold|italic"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btnFAQ18" />
+                app:layout_constraintTop_toBottomOf="@+id/btn7" />
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnFAQ22"
+                android:id="@+id/btn11"
                 android:layout_width="160dp"
                 android:layout_height="160dp"
 
@@ -128,25 +128,25 @@
                 android:textSize="25sp"
                 android:textStyle="bold|italic"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btnFAQ20" />
+                app:layout_constraintTop_toBottomOf="@+id/btn9" />
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnFAQ21"
+                android:id="@+id/btn10"
                 android:layout_width="160dp"
                 android:layout_height="160dp"
 
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
                 android:background="@drawable/button_style3"
-                android:text="Head-to-head bets"
+                android:text="Head-to- head bets"
                 android:textColor="@color/material_dynamic_neutral30"
                 android:textSize="25sp"
                 android:textStyle="bold|italic"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btnFAQ19" />
+                app:layout_constraintTop_toBottomOf="@+id/btn8" />
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnFAQ13"
+                android:id="@+id/btn2"
                 android:layout_width="160dp"
                 android:layout_height="160dp"
 
@@ -157,12 +157,12 @@
                 android:textColor="@color/material_dynamic_neutral30"
                 android:textSize="25sp"
                 android:textStyle="bold|italic"
-                app:layout_constraintBottom_toBottomOf="@+id/btnFAQ11"
+                app:layout_constraintBottom_toBottomOf="@+id/btn1"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnFAQ11"
+                android:id="@+id/btn1"
                 android:layout_width="160dp"
                 android:layout_height="160dp"
                 android:layout_marginStart="8dp"
@@ -177,7 +177,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnFAQ14"
+                android:id="@+id/btn3"
                 android:layout_width="160dp"
                 android:layout_height="160dp"
                 android:layout_marginStart="8dp"
@@ -189,7 +189,7 @@
                 android:textSize="25sp"
                 android:textStyle="bold|italic"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btnFAQ11" />
+                app:layout_constraintTop_toBottomOf="@+id/btn1" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 

@@ -1,59 +1,84 @@
 package com.example.betdirectory
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.betdirectory.databinding.FragmentTypesBinding
+import com.example.betdirectory.domain.retroDetail.ApiDetail
+import com.example.betdirectory.model.TypesOfBets
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- * Use the [TypesFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class TypesFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
-    }
-
+lateinit var binding: FragmentTypesBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_types, container, false)
+        binding = FragmentTypesBinding.inflate(layoutInflater, container, false)
+        return binding.root
     }
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment TypesFragment.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            TypesFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        val bundleText = Bundle()
+        init(bundleText)
     }
+
+
+    private fun init(bundleText: Bundle){
+        binding.btn1.setOnClickListener {
+            bundleText.putInt("id", 0)
+            APP.navController.navigate(R.id.action_typesFragment_to_detailFragment, bundleText)
+        }
+        binding.btn2.setOnClickListener {
+            bundleText.putInt("id", 1)
+            APP.navController.navigate(R.id.action_typesFragment_to_detailFragment, bundleText)
+        }
+        binding.btn3.setOnClickListener {
+            bundleText.putInt("id", 2)
+            APP.navController.navigate(R.id.action_typesFragment_to_detailFragment, bundleText)
+        }
+        binding.btn4.setOnClickListener {
+            bundleText.putInt("id", 3)
+            APP.navController.navigate(R.id.action_typesFragment_to_detailFragment, bundleText)
+        }
+        binding.btn5.setOnClickListener {
+            bundleText.putInt("id", 4)
+            APP.navController.navigate(R.id.action_typesFragment_to_detailFragment, bundleText)
+        }
+        binding.btn6.setOnClickListener {
+            bundleText.putInt("id", 5)
+            APP.navController.navigate(R.id.action_typesFragment_to_detailFragment, bundleText)
+        }
+        binding.btn7.setOnClickListener {
+            bundleText.putInt("id", 6)
+            APP.navController.navigate(R.id.action_typesFragment_to_detailFragment, bundleText)
+        }
+        binding.btn8.setOnClickListener {
+            bundleText.putInt("id", 7)
+            APP.navController.navigate(R.id.action_typesFragment_to_detailFragment, bundleText)
+        }
+        binding.btn9.setOnClickListener {
+            bundleText.putInt("id", 8)
+            APP.navController.navigate(R.id.action_typesFragment_to_detailFragment, bundleText)
+        }
+        binding.btn10.setOnClickListener {
+            bundleText.putInt("id", 9)
+            APP.navController.navigate(R.id.action_typesFragment_to_detailFragment, bundleText)
+        }
+        binding.btn11.setOnClickListener {
+            bundleText.putInt("id", 10)
+            APP.navController.navigate(R.id.action_typesFragment_to_detailFragment, bundleText)
+        }
+
+
+    }
+
+
+
 }
