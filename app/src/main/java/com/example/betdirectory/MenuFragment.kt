@@ -28,6 +28,9 @@ class MenuFragment : Fragment() {
         binding.btnTypes.setOnClickListener {
             APP.navController.navigate(R.id.action_menuFragment_to_typesFragment)
         }
+       binding.btnStrategy.setOnClickListener {
+           APP.navController.navigate(R.id.action_menuFragment_to_strategyFragment)
+       }
     }
 
 }

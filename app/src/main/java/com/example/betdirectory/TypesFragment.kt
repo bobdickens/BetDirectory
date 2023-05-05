@@ -75,6 +75,9 @@ lateinit var binding: FragmentTypesBinding
             bundleText.putInt("id", 10)
             APP.navController.navigate(R.id.action_typesFragment_to_detailFragment, bundleText)
         }
+        binding.btnBack.setOnClickListener {
+            APP.navController.navigate(R.id.action_typesFragment_to_menuFragment)
+        }
 
 
     }

@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_strategyFragment_to_menuFragment"
             app:destination="@id/menuFragment" />
+        <action
+            android:id="@+id/action_strategyFragment_to_strategyDetailFragment"
+            app:destination="@id/strategyDetailFragment" />
     </fragment>
     <fragment
         android:id="@+id/menuFragment"
@@ -60,6 +63,18 @@
             app:destination="@id/typesFragment" />
         <argument
             android:name="id"
+            android:defaultValue="0" />
+    </fragment>
+    <fragment
+        android:id="@+id/strategyDetailFragment"
+        android:name="com.example.betdirectory.StrategyDetailFragment"
+        android:label="fragment_strategy_detail"
+        tools:layout="@layout/fragment_strategy_detail" >
+        <action
+            android:id="@+id/action_strategyDetailFragment_to_strategyFragment"
+            app:destination="@id/strategyFragment" />
+        <argument
+            android:name="ids"
             android:defaultValue="0" />
     </fragment>
 </navigation>
