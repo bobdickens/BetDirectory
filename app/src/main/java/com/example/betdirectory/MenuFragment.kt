@@ -31,6 +31,9 @@ class MenuFragment : Fragment() {
        binding.btnStrategy.setOnClickListener {
            APP.navController.navigate(R.id.action_menuFragment_to_strategyFragment)
        }
+       binding.btnFAQ.setOnClickListener {
+           APP.navController.navigate(R.id.action_menuFragment_to_FAQFragment)
+       }
     }
 
 }

@@ -88,5 +88,8 @@
         <action
             android:id="@+id/action_faqDetailFragment_to_FAQFragment"
             app:destination="@id/FAQFragment" />
+        <argument
+            android:name="ids"
+            android:defaultValue="0" />
     </fragment>
 </navigation>

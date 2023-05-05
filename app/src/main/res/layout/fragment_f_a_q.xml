@@ -3,12 +3,193 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FAQFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FAQFragment"
+    android:background="@drawable/backgroundmenu"
+    android:padding="20dp">
 
-    <!-- TODO: Update blank fragment layout -->
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="56dp"
+        android:layout_height="50dp"
+        android:background="@drawable/baseline_arrow_back_ios_24"
+        app:layout_constraintBottom_toBottomOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView2" />
+
     <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FAQ"
+        android:textColor="@color/material_dynamic_neutral20"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="600dp"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnTypes1"
+                android:layout_width="match_parent"
+                android:layout_height="81dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/button_style3"
+                android:text="Is it possible to make money by betting on sports?"
+                android:textColor="@color/material_dynamic_neutral30"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                android:padding="10dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnTypes2"
+                android:layout_width="match_parent"
+                android:layout_height="81dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/button_style3"
+                android:padding="10dp"
+                android:paddingTop="10dp"
+                android:text="How can I get started betting on sports?"
+                android:textColor="@color/material_dynamic_neutral30"
+                android:textSize="20sp"
+                android:textStyle="bold|italic" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnTypes3"
+                android:layout_width="match_parent"
+                android:layout_height="81dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/button_style3"
+                android:padding="10dp"
+                android:text="How can I sharpen my sports betting skills?"
+                android:textColor="@color/material_dynamic_neutral30"
+                android:textSize="20sp"
+                android:textStyle="bold|italic" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnTypes4"
+                android:layout_width="match_parent"
+                android:layout_height="81dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/button_style3"
+                android:padding="5dp"
+                android:text="How much money should I bet?"
+                android:textColor="@color/material_dynamic_neutral30"
+                android:textSize="20sp"
+                android:textStyle="bold|italic" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnTypes5"
+                android:layout_width="match_parent"
+                android:layout_height="81dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/button_style3"
+                android:text="What’s the best sport to wager on?"
+                android:textColor="@color/material_dynamic_neutral30"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                android:padding="5dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnTypes6"
+                android:layout_width="match_parent"
+                android:layout_height="81dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/button_style3"
+                android:text="How do I choose my selections?"
+                android:textColor="@color/material_dynamic_neutral30"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                android:padding="10dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnTypes7"
+                android:layout_width="match_parent"
+                android:layout_height="81dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/button_style3"
+                android:text="What types of bets can I place?"
+                android:textColor="@color/material_dynamic_neutral30"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                android:padding="10dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnTypes8"
+                android:layout_width="match_parent"
+                android:layout_height="81dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/button_style3"
+                android:text="How do I discern betting odds?"
+                android:textColor="@color/material_dynamic_neutral30"
+                android:textSize="20sp"
+                android:textStyle="bold|italic" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnTypes9"
+                android:layout_width="match_parent"
+                android:layout_height="81dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/button_style3"
+                android:text="Should I ever pay for sports betting tips?"
+                android:textColor="@color/material_dynamic_neutral30"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                android:padding="10dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnTypes10"
+                android:layout_width="match_parent"
+                android:layout_height="81dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/button_style3"
+                android:text="Do I need to be a sports expert to bet on sports?"
+                android:textColor="@color/material_dynamic_neutral30"
+                android:textSize="20sp"
+                android:textStyle="bold|italic" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnTypes11"
+                android:layout_width="match_parent"
+                android:layout_height="81dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/button_style3"
+                android:text="What is fantasy sports betting?"
+                android:textColor="@color/material_dynamic_neutral30"
+                android:textSize="20sp"
+                android:textStyle="bold|italic" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnTypes12"
+                android:layout_width="match_parent"
+                android:layout_height="81dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/button_style3"
+                android:text="What does vigorish mean?"
+                android:textColor="@color/material_dynamic_neutral30"
+                android:textSize="20sp"
+                android:textStyle="bold|italic" />
+
+
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
