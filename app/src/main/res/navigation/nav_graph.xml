@@ -52,6 +52,9 @@
         <action
             android:id="@+id/action_FAQFragment_to_menuFragment"
             app:destination="@id/menuFragment" />
+        <action
+            android:id="@+id/action_FAQFragment_to_faqDetailFragment"
+            app:destination="@id/faqDetailFragment" />
     </fragment>
     <fragment
         android:id="@+id/detailFragment"
@@ -76,5 +79,14 @@
         <argument
             android:name="ids"
             android:defaultValue="0" />
+    </fragment>
+    <fragment
+        android:id="@+id/faqDetailFragment"
+        android:name="com.example.betdirectory.FaqDetailFragment"
+        android:label="fragment_faq_detail"
+        tools:layout="@layout/fragment_faq_detail" >
+        <action
+            android:id="@+id/action_faqDetailFragment_to_FAQFragment"
+            app:destination="@id/FAQFragment" />
     </fragment>
 </navigation>
