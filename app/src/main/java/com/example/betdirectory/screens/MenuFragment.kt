@@ -1,10 +1,12 @@
-package com.example.betdirectory
+package com.example.betdirectory.screens
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.betdirectory.APP
+import com.example.betdirectory.R
 import com.example.betdirectory.databinding.FragmentMenuBinding
 
 class MenuFragment : Fragment() {

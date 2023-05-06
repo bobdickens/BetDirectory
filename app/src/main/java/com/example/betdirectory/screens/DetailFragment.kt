@@ -1,4 +1,4 @@
-package com.example.betdirectory
+package com.example.betdirectory.screens
 
 import android.os.Bundle
 import android.util.Log
@@ -6,10 +6,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.example.betdirectory.APP
+import com.example.betdirectory.R
 import com.example.betdirectory.databinding.FragmentDetailBinding
 import com.example.betdirectory.domain.retroDetail.ApiDetail
 import com.example.betdirectory.model.TypesOfBets
-import com.example.betdirectory.model.TypesOfBetsItem
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

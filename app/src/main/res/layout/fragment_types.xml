@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/backgroundmenu"
     android:padding="20dp"
-    tools:context=".TypesFragment">
+    tools:context=".screens.TypesFragment">
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"

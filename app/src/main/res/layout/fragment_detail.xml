@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/backgroundmenu"
     android:padding="20dp"
-    tools:context=".DetailFragment">
+    tools:context=".screens.DetailFragment">
 
 
     <androidx.core.widget.NestedScrollView

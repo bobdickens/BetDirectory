@@ -1,17 +1,13 @@
-package com.example.betdirectory
+package com.example.betdirectory.screens
 
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.betdirectory.APP
+import com.example.betdirectory.R
 import com.example.betdirectory.databinding.FragmentTypesBinding
-import com.example.betdirectory.domain.retroDetail.ApiDetail
-import com.example.betdirectory.model.TypesOfBets
-import retrofit2.Call
-import retrofit2.Callback
-import retrofit2.Response
 
 class TypesFragment : Fragment() {
 lateinit var binding: FragmentTypesBinding

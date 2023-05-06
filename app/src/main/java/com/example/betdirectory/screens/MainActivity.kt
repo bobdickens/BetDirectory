@@ -1,17 +1,14 @@
-package com.example.betdirectory
+package com.example.betdirectory.screens
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
+import com.example.betdirectory.APP
+import com.example.betdirectory.R
 import com.example.betdirectory.databinding.ActivityMainBinding
-import com.example.betdirectory.domain.retroDetail.ApiDetail
-import com.example.betdirectory.model.TypesOfBets
 import com.onesignal.OneSignal
-import retrofit2.Call
-import retrofit2.Callback
-import retrofit2.Response
+
 const val ONESIGNAL_APP_ID = "########-####-####-####-############"
 class MainActivity : AppCompatActivity() {
 
