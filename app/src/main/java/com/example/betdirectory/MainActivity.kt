@@ -8,10 +8,11 @@ import androidx.navigation.Navigation
 import com.example.betdirectory.databinding.ActivityMainBinding
 import com.example.betdirectory.domain.retroDetail.ApiDetail
 import com.example.betdirectory.model.TypesOfBets
+import com.onesignal.OneSignal
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
-
+const val ONESIGNAL_APP_ID = "########-####-####-####-############"
 class MainActivity : AppCompatActivity() {
 
     lateinit var binding: ActivityMainBinding
@@ -23,6 +24,16 @@ class MainActivity : AppCompatActivity() {
 
         APP = this
         navController = Navigation.findNavController(this, R.id.nav_fragment)
+
+
+        OneSignal.setLogLevel(OneSignal.LOG_LEVEL.VERBOSE, OneSignal.LOG_LEVEL.NONE)
+
+
+        OneSignal.initWithContext(this)
+        OneSignal.setAppId(ONESIGNAL_APP_ID)
+
+
+        OneSignal.promptForPushNotifications()
 
 
 
